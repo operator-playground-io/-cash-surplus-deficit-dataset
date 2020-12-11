@@ -1,0 +1,39 @@
+{
+  "name": "Cash Surplus Deficit Dataset",
+  "description": "Cash Surplus/Deficit (% of GDP), from 1990 to 2013.",
+  "logo": "_images/dataset.png",
+  "has_supporting_content": false,
+  "stack_id": "cash_surplus_deficit_dataset",
+  "type": "Dataset",
+  "categories": [
+    "Economy"
+  ],
+  "platform": "Kubernetes",
+  "cover": "cover.md",
+  "deployment_information": {
+     "Dataset": "/home/student/projects/cash_surplus_deficit_dataset"
+  },
+  "commands": [],
+  "display": [
+    {
+      "name": "Developer Dashboard",
+      "url": "##DNS.host##/codeserver",
+      "enabled": true
+    }
+  ],
+  "meta": {
+    "Install time": [
+      "2 minutes"
+    ],
+    "Type": [
+      "Dataset"
+    ],
+    "Tag": [
+      "CSV"
+    ],
+    "categories": [
+      "Economy"
+    ]
+  },
+  "isDocumentSaved": true
+}
