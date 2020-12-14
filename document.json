@@ -13,7 +13,12 @@
   "deployment_information": {
      "Dataset": "/home/student/projects/cash_surplus_deficit_dataset"
   },
-  "commands": [],
+  "commands": [
+   {
+      "description": "Get Dataset",
+      "exec": "cd /home/student/projects && mkdir cash-surplus-deficit-dataset && cd cash-surplus-deficit-dataset  && git clone https://github.com/datasets/cash-surplus-deficit.git"
+    }
+],
   "display": [
     {
       "name": "Developer Dashboard",
