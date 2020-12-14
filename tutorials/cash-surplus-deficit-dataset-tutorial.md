@@ -7,39 +7,39 @@ description: This tutorial explains how to use cash surplus deficit dataset in a
 
 ***Introduction***
 
-US Employment rates application is a Java Spring application which is deployed as a microservice.
-The example also uses Skaffold which handles the workflow for building, pushing and deploying your application, allowing you to focus on what matters most: writing code.
+Example Application: GDP Trends Application (Python)
+
+GDP Trends Application is a Dash Application. It uses Python's Flask framework and plotly for an elegant visualization of GDP trends of South Asian countries till 2012, which is processed and pulled from an external data source using Pandas. 
 
 ***Code Structure***
 
 ![codestructure](_images/app-structure.PNG)
 
-It follows a simple modular and MVC pattern. There are 2 folders that are of our interest:
-- k8s :  This contains all the deployment and service yaml for the application. This defines the deployment and exposure of our application.
+There are 2 folders that are of our interest:
+- k8s: This contains all the deployment and service yaml for the application. This defines the deployment and exposure of our application.
 - app: This contains the python application.
 
 ### Try the example
 
 Get the application code
 ```execute
-cd /home/student/projects && git clone https://github.com/Andi-Cirjaliu/edge-java-react-dataset-deploy.git
+cd /home/student/projects && git clone https://github.com/operator-playground-io/sample-cash-surplus-deficit-dataset.git
 ```
 
 Copy the dataset into application folder
 ```execute
-cp -R employment_dataset edge-java-react-dataset-deploy/backend
+cp -R /home/student/projects/cash_surplus_deficit_dataset /home/student/projects/sample-cash-surplus-deficit-dataset/app/.
 ```
 
 Install and start the application using skaffold tool
 ```execute
-cd /home/student/projects/edge-java-react-dataset-deploy && skaffold config set default-repo localhost:5000 && skaffold run
+cd /home/student/projects/sample-cash-surplus-deficit-dataset && skaffold config set default-repo localhost:5000 && skaffold run
 ```
 
 ### Access the example application
 
-Click on the Key icon on the dashboard and copy the value under the `DNS` section and `IP` field
-
-URL :  http://##DNS.ip##:30091
+Click the below URL to access the deployed applicaion.
+URL :  http://##DNS.ip##:32101
 
 ### To Deploy changes to Kubernetes in Dev Mode
 
@@ -55,7 +55,7 @@ In this example , we use `Skaffold` which simplifies local development. You can 
 
 Navigate to the example:
 ```execute
-cd /home/student/projects/edge-java-react-dataset-deploy
+cd /home/student/projects/sample-cash-surplus-deficit-dataset
 ```
 
 Deploy the changes in dev mode:
@@ -71,7 +71,7 @@ Also, you can use the `skaffold run` to deploy the changes onto Kubernetes as a 
 
 You can delete all the application resources created by executing the following command:
 ```execute
-cd /home/student/projects/edge-java-react-dataset-deploy && kubectl delete -f k8s/
+cd /home/student/projects/sample-cash-surplus-deficit-dataset && kubectl delete -f k8s/
 ```
 
 
