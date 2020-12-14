@@ -3,11 +3,9 @@ title: Sample Python Application using cash surplus deficit dataset
 description: This tutorial explains how to use cash surplus deficit dataset in a sample python application
 ---
 
-### Example Application : US Employment rates application (Java)
+### Example Application: GDP Trends Application (Python)
 
 ***Introduction***
-
-Example Application: GDP Trends Application (Python)
 
 GDP Trends Application is a Dash Application. It uses Python's Flask framework and plotly for an elegant visualization of GDP trends of South Asian countries till 2012, which is processed and pulled from an external data source using Pandas. 
 
