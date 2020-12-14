@@ -1,6 +1,6 @@
 ---
-title: Sample Application using Employment Dataset
-description: This tutorial explains how to use Employment Dataset in a sample application
+title: Sample Python Application using cash surplus deficit dataset
+description: This tutorial explains how to use cash surplus deficit dataset in a sample python application
 ---
 
 ### Example Application : US Employment rates application (Java)
@@ -10,19 +10,13 @@ description: This tutorial explains how to use Employment Dataset in a sample ap
 US Employment rates application is a Java Spring application which is deployed as a microservice.
 The example also uses Skaffold which handles the workflow for building, pushing and deploying your application, allowing you to focus on what matters most: writing code.
 
-***Architecture***
-
-![architecture](_images/arch.png)
-
-This application consists of a Java backend and a React frontend that is displaying data from a dataset. The frontend is included in the Java backend.
-
 ***Code Structure***
 
-![codestructure](_images/employment-app-structure.png)
+![codestructure](_images/app-structure.PNG)
 
 It follows a simple modular and MVC pattern. There are 2 folders that are of our interest:
 - k8s :  This contains all the deployment and service yaml for the application. This defines the deployment and exposure of our application.
-- backend: This contains all the backend code made using Java Spring. The frontend built in React is included in the backend.
+- app: This contains the python application.
 
 ### Try the example
 
