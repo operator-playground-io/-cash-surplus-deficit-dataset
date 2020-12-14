@@ -26,7 +26,7 @@ cd /home/student/projects && git clone https://github.com/operator-playground-io
 
 Copy the dataset into application folder
 ```execute
-cp -R /home/student/projects/cash_surplus_deficit_dataset/cash-surplus-deficit /home/student/projects/sample-cash-surplus-deficit-dataset/app/.
+cp -R /home/student/projects/cash-surplus-deficit-dataset/cash-surplus-deficit /home/student/projects/sample-cash-surplus-deficit-dataset/app/.
 ```
 
 Install and start the application using skaffold tool
