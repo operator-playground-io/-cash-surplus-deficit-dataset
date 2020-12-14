@@ -1,14 +1,14 @@
 {
-   "name":"Sample Application using Employment Dataset",
+   "name":"Sample Application using cash surplus deficit dataset",
    "appLayout":"accordion",
    "appTheme":"g90",
    "footer":"footer.md",
    "tutorials":[
       {
-         "description":"Sample Application using Employment Dataset",
+         "description":"Sample Application using cash surplus deficit dataset",
          "duration":"30 min",
-         "tutorial_name":"Employment-dataset-tutorial.md",
-         "title":"Sample Application using Employment Dataset"
+         "tutorial_name":"cash-surplus-deficit-dataset-tutorial.md",
+         "title":"Sample Application using cash surplus deficit dataset"
       }
    ],
    "usefulLinks":[
