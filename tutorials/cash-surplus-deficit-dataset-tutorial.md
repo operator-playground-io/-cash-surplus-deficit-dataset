@@ -58,7 +58,7 @@ cd /home/student/projects/sample-cash-surplus-deficit-dataset
 
 Deploy the changes in dev mode:
 ```execute
-skaffold dev
+skaffold dev --default-repo localhost:5000/app
 ```
 
 On exiting the command, Skaffold will automatically destroy all the resources it created with above command.
