@@ -58,7 +58,7 @@ cd /home/student/projects/sample-cash-surplus-deficit-dataset
 
 Deploy the changes in dev mode:
 ```execute
-skaffold dev --default-repo localhost:5000/app
+skaffold config set default-repo localhost:5000 && skaffold dev
 ```
 
 On exiting the command, Skaffold will automatically destroy all the resources it created with above command.
@@ -69,7 +69,7 @@ Also, you can use the `skaffold run` to deploy the changes onto Kubernetes as a 
 
 You can delete all the application resources created by executing the following command:
 ```execute
-cd /home/student/projects/sample-cash-surplus-deficit-dataset && kubectl delete -f k8s/
+cd /home/student/projects/sample-cash-surplus-deficit-dataset && skaffold delete
 ```
 
 
