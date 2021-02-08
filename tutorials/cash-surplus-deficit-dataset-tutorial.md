@@ -41,15 +41,9 @@ URL :  http://##DNS.ip##:32101
 
 ### To Deploy changes to Kubernetes in Dev Mode
 
-Go to Developer Dashboard tab, it will provide you with the IDE along with the integrated terminal.  Click on the bottom status bar and select `TERMINAL`. 
-
 k8s folder contains all the manifest files and defines the deployment strategy for the application.
-One can execute them using :
-```execute
-kubectl apply -f k8s/
-```
 
-In this example , we use `Skaffold` which simplifies local development. You can deploy the application is DEV mode which keeps watching for the files changes and on any change, triggers the entire deployment process automatically without the user having to run and manage it manually.
+In this example , we use `Skaffold` which simplifies local development. You can deploy the application in DEV mode which keeps watching for the file changes and on any change, triggers the entire deployment process automatically without the user having to run and manage it manually.
 
 Navigate to the example:
 ```execute
@@ -60,6 +54,10 @@ Deploy the changes in dev mode:
 ```execute
 skaffold config set default-repo localhost:5000 && skaffold dev
 ```
+
+To demonstrate the automatic deployment, make a modification in the dataset by deleting all the records of `Afghanistan`. The dataset can be found at `projects/sample-cash-surplus-deficit-dataset/app/cash-surplus-deficit/data/cash-surp-def.csv` and can be easily accessed from the `Developer Dashboard`. The modified dataset can be saved with the keyboard shortcut `Ctrl+s`.
+
+Notice in the terminal, Skaffold begins to rebuild the image with the modified file and deploy it. The modified application can be viewed from the this URL, http://##DNS.ip##:32101 .
 
 On exiting the command, Skaffold will automatically destroy all the resources it created with above command.
 
